@@ -1,4 +1,3 @@
-import Header from "./components/global/Header";
 
 export default function App() {
   return (
