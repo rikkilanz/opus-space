@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -13,8 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      fontFamily: {
+      fontFamily:{
         epilogue: ['var(--font-epilogue)'],
+        opensauce: ['OpenSauceSans-Regular', 'sans'],
+        opensaucebold: ['OpenSauceSans-Bold', 'sans'],
+        opensaucebolditalic: ['OpenSauceSans-BoldItalic', 'sans'],
+        opensauceitalic: ['OpenSauceSans-Italic', 'sans'],
+        opensaucelight: ['OpenSauceSans-Light', 'sans'],
+        opensaucelightitalic: ['OpenSauceSans-LightItalic', 'sans'],
       },
     },
   },
