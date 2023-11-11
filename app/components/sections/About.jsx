@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section className="bg-gradient-to-b from-[rgba(199,70,231,1)] to-[rgba(10,6,218,0.1)] to-70%">
-      <div className="max-w-[1440px] mx-auto px-4 pb-[200px] flex flex-col md:flex-row items-center">
+    <section className="bg-gradient-to-b from-[rgba(199,70,231,1)] via-[rgba(10,6,218,0.1)] via-80% to-black">
+      <div className="max-w-[1440px] mx-auto px-4 pb-[32px] md:pb-[200px] flex flex-col md:flex-row items-center">
         <div className="md:basis-[30%]">
           <h4 className="font-epilogue font-medium md:text-[90px] text-[120px] flex items-center">
             o<div className="rounded-full h-2 w-2 bg-white mx-4" />
@@ -17,11 +17,11 @@ export default function About() {
           <h3 className="font-epilogue font-medium text-[48px] md:text-[64px] mb-[16px] leading-[1em]">
             Who are we?
           </h3>
-          <p className="font-opensauce text-[16px] md:text-[26px] leading-[1.2em] mb-[32px]">
+          <p className="font-opensauce text-[16px] lg:text-[26px] leading-[1.2em] mb-[32px]">
             We are an innovative agency that specializes in the creation of
             visual brand identities and brand development.
           </p>
-          <p className="font-opensauce text-[16px] md:text-[26px] leading-[1.2em]">
+          <p className="font-opensauce text-[16px] lg:text-[26px] leading-[1.2em]">
             We collaborate with businesses and organizations during
             transformative periods, guiding them to uncover the essence of their
             future identity.
