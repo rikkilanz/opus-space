@@ -14,7 +14,7 @@ export default function About() {
           </p>
         </div>
         <div className="md:basis-[70%] mt-[64px] md:mt-0 md:ml-[135px]">
-          <h3 className="font-epilogue font-medium text-[48px] md:text-[64px] mb-[16px]">
+          <h3 className="font-epilogue font-medium text-[48px] md:text-[64px] mb-[16px] leading-[1em]">
             Who are we?
           </h3>
           <p className="font-opensauce text-[16px] md:text-[26px] leading-[1.2em] mb-[32px]">
