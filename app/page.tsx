@@ -4,7 +4,7 @@ import CTACarousel from "./components/sections/CTACarousel"
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="antialiased">
       <Hero />
       <About />
       <CTACarousel />
