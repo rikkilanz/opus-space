@@ -1,6 +1,7 @@
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import CTACarousel from "./components/sections/CTACarousel"
+import Services from "./components/sections/Services";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <CTACarousel />
+      <Services/>
     </main>
   );
 }
