@@ -1,7 +1,7 @@
 export default function Services() {
     return (
         <section className="max-w-[1440px] mx-auto">
-            <div className="mt-10 px-4 py-6">
+            <div className="px-4 py-6">
                 <h2 className="lg:text-[24px] font-epilogue font-bold text-primary text-[18px]">Our Services</h2>
                 <h3 className="font-opensaucelight text-[36px] mt-[20px] leading-[1.3em] tracking-[-0.05em]">It's not about what we make,<span className="font-opensaucebold leading-[1em]"> it's about how satisfied you are with our service.</span></h3>
             </div>
