@@ -5,5 +5,5 @@ import rikkiSorianoProfile from './images/team-profiles/rikkisoriano-profile.jpg
 export {
     brandLogoSymbolWhite,
     brandLogoHorizontalWhite,
-    rikkiSorianoProfile
+    rikkiSorianoProfile,
 }
