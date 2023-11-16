@@ -1,11 +1,29 @@
-import { profile } from "console";
+"use client"
 import Image from "next/image";
 import {
   ArrowLongLeftIcon,
   ArrowLongRightIcon,
 } from "@heroicons/react/24/solid";
 
+import { teamData } from "../constants";
+import { useState } from "react";
+
 export default function TeamCard({ profileData }) {
+
+  const [sliderValue, setSliderValue] = useState(0);
+
+  const handlePrev = () => {
+    setSliderValue((prevSlider) => (prevSlider === 0 ? teamData.length - 1 : prevSlider - 1));
+    
+  };
+
+  const handleNext = () => {
+    setSliderValue((prevSlider) => (prevSlider === teamData.length - 1 ? 0 : prevSlider + 1))
+  };
+
+  console.log(sliderValue);
+
+
   return (
     <div
       className={`${
@@ -22,7 +40,7 @@ export default function TeamCard({ profileData }) {
       </p>
       {profileData.id === 3 && (
         <div className="md:flex gap-x-6 order-4 hidden absolute bottom-0">
-          <ArrowLongLeftIcon className="w-[50px] cursor-pointer"/> <ArrowLongRightIcon className="w-[50px] cursor-pointer"/>
+          <ArrowLongLeftIcon className="w-[50px] cursor-pointer" onClick={handlePrev}/> <ArrowLongRightIcon className="w-[50px] cursor-pointer" onClick={handleNext}/>
         </div>
       )}
       <Image
