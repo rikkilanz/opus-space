@@ -32,10 +32,10 @@ export default function TeamCard({ profileData }) {
           : "min-w-[300px] md:w-[400px]"
       } flex flex-row flex-wrap justify-center md:justify-start items-center gap-y-[8px] px-4 py-6 relative`}
     >
-      <h4 className="font-epilogue font-medium text-[30px] md:text-[24px] lg:text-[28px] leading-[-1.6px] order-1 md:basis-[50%] md:text-left whitespace-no-wrap">
+      <h4 className="font-epilogue font-medium text-[30px] md:text-[24px] lg:text-[30px] leading-[-1.6px] order-1 md:basis-[70%] md:text-left whitespace-no-wrap self-end">
         {profileData.id === 2 ? profileData.name : ""}
       </h4>
-      <p className="font-opensauce order-3 md:order-2 md:basis-[50%] text-[20px] md:text-[22px] lg:text-[26px] md:text-right leading-[-1.6px]">
+      <p className="font-opensauce order-3 md:order-2 md:basis-[30%] text-[16px] md:text-right leading-[-1.6px] self-end">
         {profileData.id === 2 ? profileData.title : ""}
       </p>
       {profileData.id === 3 && (
