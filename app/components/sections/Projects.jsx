@@ -8,7 +8,7 @@ export default function Projects() {
                 <h2 className="lg:text-[24px] font-epilogue font-bold text-primary text-[18px]">Our Projects</h2>
                 <h3 className="font-opensaucelight text-[36px] mt-[20px] leading-[1.3em] tracking-[-0.05em]">How can we produce work that you are interested in</h3>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="group relative">
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
