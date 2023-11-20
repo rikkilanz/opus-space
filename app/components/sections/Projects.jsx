@@ -58,15 +58,6 @@ export default function Projects() {
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
         </section>
     )
 }
