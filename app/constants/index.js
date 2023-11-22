@@ -11,7 +11,7 @@ export const teamData = [
     {
         id: 2,
         name: "Renzrick Endaya",
-        title: "User Experience Designer",
+        title: "UX Designer",
         imageUrl: rikkiSorianoProfile,
         alt: "A professional head shot image of Renzrick Endaya",
     },

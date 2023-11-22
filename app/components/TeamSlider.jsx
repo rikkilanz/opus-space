@@ -29,12 +29,12 @@ export default function TeamSlider() {
     ],
     nextArrow: (
       <button id="next">
-        <ArrowLongRightIcon className="hidden md:block w-[50px] cursor-pointer absolute bottom-0 z-[99] right-[25%]" />
+        <ArrowLongRightIcon className="hidden md:block right-[16%] bottom-[25px] w-[50px] cursor-pointer absolute lg:bottom-0 z-[99] lg:right-[25%]" />
       </button>
     ),
     prevArrow: (
       <button id="previous">
-        <ArrowLongLeftIcon className="hidden md:block w-[50px] cursor-pointer absolute bottom-0 z-[99] right-[30%]" />
+        <ArrowLongLeftIcon className="hidden md:block right-[24%] bottom-[25px] w-[50px] cursor-pointer absolute lg:bottom-0 z-[99] lg:right-[30%]" />
       </button>
     ),
   };
