@@ -1,21 +1,50 @@
-"use client"
-import {useState} from 'react';
+"use client";
 import TeamCard from "./TeamCard";
-import {teamData} from '../constants/index'
+import { teamData } from "../constants/index";
+import Slider from "react-slick";
+import {
+  ArrowLongLeftIcon,
+  ArrowLongRightIcon,
+} from "@heroicons/react/24/solid";
 
 export default function TeamSlider() {
+  const settings = {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    infinte: true,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+    nextArrow: (
+      <button id="next">
+        <ArrowLongRightIcon className="hidden md:block w-[50px] cursor-pointer absolute bottom-0 z-[99] right-[25%]" />
+      </button>
+    ),
+    prevArrow: (
+      <button id="previous">
+        <ArrowLongLeftIcon className="hidden md:block w-[50px] cursor-pointer absolute bottom-0 z-[99] right-[30%]" />
+      </button>
+    ),
+  };
 
-    // const [sliderId, setSliderId] = useState(0);
-
-    // console.log(sliderId)
-
-    return(
-        <div className="flex overflow-x-auto [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-30px),transparent_100%)] lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] md:pb-[32px]">
-            {
-                teamData.map((data) => (
-                    <TeamCard key={data.id} profileData={data}/>
-                ))
-            }
-        </div>
-    )
+  return (
+    <Slider {...settings} className="sm:translate-x-[-300px] md:translate-x-[-200px]">
+      {teamData.map((data) => (
+        <TeamCard key={data.id} profileData={data} />
+      ))}
+    </Slider>
+  );
 }
+

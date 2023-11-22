@@ -1,0 +1,47 @@
+.slick-slide {
+  transform: scale(1);
+  /* //opacity: .5; */
+  transition: 0.3s ease-in-out all;
+}
+.slick-slide.slick-center {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.switch {
+  background: #000;
+}
+.slider {
+  /* //max-width: 1024px; */
+  margin: 0 auto;
+  /* ///border: 1px solid; */
+  position: relative;
+}
+.slider:after,
+.slider:before {
+  content: "";
+  background: #fafafa;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 12%;
+  z-index: 100;
+  /* //opacity: .9; */
+}
+
+.slider:after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.slider:before {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
