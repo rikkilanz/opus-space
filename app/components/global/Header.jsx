@@ -27,7 +27,7 @@ export default function Header() {
       } else if (width <= 1535) {
         setBreakpointState("2xl");
       }
-      console.log(breakpoint);
+    
     };
 
     window.addEventListener("resize", calculateBreakpoint);
