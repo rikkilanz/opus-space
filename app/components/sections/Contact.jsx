@@ -6,22 +6,22 @@ import React from "react";
 export default function Contact() {
     return (
         <section className="">
-            <div className="max-w-[680px] mx-auto mt-20">
-                <h1 className="font-opensaucebold text-[50px] lg:text-[80px] text-center">Let's <span className="text-primary">Work</span> together and create your <span className="text-secondary">Opus.</span></h1>
+            <div className="max-w-[1440px] mx-auto mt-20">
+                <h1 className="font-opensaucebold text-[50px] lg:text-[160px] leading-[1em] tracking-[-0.05em] text-center">Let's <span className="text-primary">Work</span> together and create your <span className="text-secondary">Opus.</span></h1>
             </div>
             <div className="mt-[85px] p-6 grid-cols-2 md:flex md:justify-center md:items-center lg:flex lg:justify-center lg:items-center gap-40 bg-gradient-to-b from-black via-[rgba(10,6,218,0.1)] via-20% to-[rgba(199,70,231,1)]">
                 <div>
                     <Image
                     className="lg:w-[500px] mb-10" 
                     src={brandLogoSymbolWhite}
-
+                    alt="Opus Space Brand Logo White"
                     />
                 </div>
                 <div className="">
                     <div className="mb-5">
                         <form method="POST">
                             <label
-                            className="mb-2 font-opensaucelight text-white block"
+                            className="mb-2 font-opensaucebold text-white block"
                             for="name"
                             >Your Name</label>
                         </form>
@@ -36,7 +36,7 @@ export default function Contact() {
                     <div className="mb-5">
                         <form method="POST">
                             <label
-                            className="mb-2 font-opensaucelight text-white block"
+                            className="mb-2 font-opensaucebold text-white block"
                             for="email"
                             >Email Address</label>
                         </form>
@@ -51,7 +51,7 @@ export default function Contact() {
                     <div className="mb-5">
                         <form method="POST">
                             <label
-                            className="mb-2 font-opensaucelight text-white block"
+                            className="mb-2 font-opensaucebold text-white block"
                             for="project"
                             >About Your Project</label>
                         </form>
@@ -66,7 +66,7 @@ export default function Contact() {
                     <div className="mb-5">
                         <form method="POST">
                             <label
-                            className="mb-2 font-opensaucelight text-white block"
+                            className="mb-2 font-opensaucebold text-white block"
                             for="budget"
                             >Estimated Budget</label>
                         </form>
