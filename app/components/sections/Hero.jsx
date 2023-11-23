@@ -12,7 +12,7 @@ export default function Hero() {
             We are Opus-Space.
           </h1>
           <div className="w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] z-[-1] absolute top-0 right-0 left-0 mx-auto bg-gradient-radial from-[rgba(85,97,251,0.4)] to-[rgba(85,97,251,0)] rounded-full to-60%" />
-          <Image className="absolute top-0 right-0 left-0 mx-auto w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] opacity-25" src={brandLogoSymbolWhite} />
+          <Image className="absolute top-0 right-0 left-0 mx-auto w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] opacity-25" src={brandLogoSymbolWhite} alt="Opus Space Brand Logo White"/>
         </div>
         <h2 className="font-opensauce text-[2.25em] leading-[1em] tracking-[-0.05em] py-6 px-4 mb-[32px] max-w-[800px]">
           Here to help you create your visions come to life, your great opus.
