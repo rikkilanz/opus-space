@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Epilogue } from "next/font/google";
-import "./globals.css";
+import "./css/globals.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 // Component imports
 import Header from "./components/global/Header";
