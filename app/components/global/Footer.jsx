@@ -10,6 +10,7 @@ export default function Footer() {
           <Image
             className="lg:w-[190px] lg:mb-[24px] lg:mt-[24px] hidden lg:block"
             src={brandLogoHorizontalWhite}
+            alt="opus space logo in white with opus space text wordmark"
           />
           <h3 className="leading-[1em] tracking-[-0.05em] font-epilogue font-semibold lg:font-semibold lg:text-[50px] text-[40px] lg:w-[800px] text-center lg:text-left">
             Would you like to work with us? Let's work together.

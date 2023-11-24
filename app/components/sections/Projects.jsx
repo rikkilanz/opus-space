@@ -13,6 +13,7 @@ export default function Projects() {
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={forwardThumb}
+                    alt="project thumbnail for forward 2023"
                     /> 
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">FORWARD 2023</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
@@ -21,6 +22,7 @@ export default function Projects() {
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={live2kThumb}
+                    alt="project thumbnail for live 2k"
                     /> 
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">LIVE 2K</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
@@ -29,6 +31,7 @@ export default function Projects() {
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={live2kThumb}
+                    alt="project thumbnail for live 2k"
                     /> 
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">LIVE 2K</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
@@ -37,6 +40,7 @@ export default function Projects() {
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={forwardThumb}
+                    alt="project thumbnail for forward 2023"
                     /> 
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">LIVE 2K</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
@@ -45,6 +49,7 @@ export default function Projects() {
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={forwardThumb}
+                    alt="project thumbnail for forward 2023"
                     /> 
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">LIVE 2K</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
@@ -53,6 +58,7 @@ export default function Projects() {
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={live2kThumb}
+                    alt="project thumbnail for live 2k"
                     /> 
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">LIVE 2K</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>

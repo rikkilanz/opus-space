@@ -18,7 +18,7 @@ export default function Contact() {
             <form method="POST">
               <label
                 className="mb-2 font-opensaucebold text-white block"
-                for="name"
+                htmlFor="name"
               >
                 Your Name
               </label>
@@ -35,7 +35,7 @@ export default function Contact() {
             <form method="POST">
               <label
                 className="mb-2 font-opensaucebold text-white block"
-                for="email"
+                htmlFor="email"
               >
                 Email Address
               </label>
@@ -52,7 +52,7 @@ export default function Contact() {
             <form method="POST">
               <label
                 className="mb-2 font-opensaucebold text-white block"
-                for="project"
+                htmlFor="project"
               >
                 About Your Project
               </label>
@@ -69,7 +69,7 @@ export default function Contact() {
             <form method="POST">
               <label
                 className="mb-2 font-opensaucebold text-white block"
-                for="budget"
+                htmlFor="budget"
               >
                 Estimated Budget
               </label>
