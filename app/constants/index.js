@@ -1,4 +1,4 @@
-import {rikkiSorianoProfile} from "../assets/index"
+import {rikkiSorianoProfile, daveKooProfile, joshwelLicerioProfile, renzrickEndayaProfile} from "../assets/index"
 
 export const teamData = [
     {
@@ -12,21 +12,21 @@ export const teamData = [
         id: 2,
         name: "Renzrick Endaya",
         title: "UX Designer",
-        imageUrl: rikkiSorianoProfile,
+        imageUrl: renzrickEndayaProfile,
         alt: "A professional head shot image of Renzrick Endaya",
     },
     {
         id: 3,
         name: "Joshwel Licerio",
         title: "Graphic Designer",
-        imageUrl: rikkiSorianoProfile,
+        imageUrl: joshwelLicerioProfile,
         alt: "A professional head shot image of Joshwel Licerio",
     },
     {
         id: 4,
         name: "Dave Koo",
         title: "Front End Developer",
-        imageUrl: rikkiSorianoProfile,
+        imageUrl: daveKooProfile,
         alt: "A professional head shot image of Dave Koo",
     },
 ]
