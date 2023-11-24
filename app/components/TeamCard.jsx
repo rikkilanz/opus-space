@@ -5,7 +5,7 @@ export default function TeamCard({ profileData }) {
 
   return (
     <div
-    className="flex flex-row flex-wrap justify-center md:justify-start items-center gap-y-[8px] px-4 py-6 relative"
+    className="flex flex-row flex-wrap justify-center md:justify-start items-center gap-y-[8px] lg:gap-y-2 px-4 py-6 relative lg:min-h-[500px]"
     >
       <h4 className="font-epilogue font-medium text-[30px] md:text-[24px] lg:text-[30px] leading-[1em] tracking-[-0.05em] order-1 md:basis-[70%] md:text-left whitespace-no-wrap self-end">
         {profileData.name}

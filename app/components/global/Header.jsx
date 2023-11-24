@@ -49,13 +49,13 @@ export default function Header() {
             className="flex lg:gap-[2em] flex-col lg:flex-row w-full"
             onClick={() => handleMenuButton(false)}
           >
-            <li className="hover:border-b-2 py-6 px-8 lg:p-0">
+            <li className="hover:underline py-6 px-8 lg:p-0">
               <Link href={"#"}>Service</Link>
             </li>
-            <li className="hover:border-b-2 py-6 px-8 lg:p-0">
+            <li className="hover:underline py-6 px-8 lg:p-0">
               <Link href={"#"}>Team</Link>
             </li>
-            <li className="hover:border-b-2 py-6 px-8 lg:p-0">
+            <li className="hover:underline py-6 px-8 lg:p-0">
               <Link href={"#"}>Projects</Link>
             </li>
           </ul>
