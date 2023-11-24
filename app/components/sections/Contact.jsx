@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="">
+    <section id="contact-section" className="">
       <div className="max-w-[1440px] mx-auto mt-20">
         <h1 className="font-epilogue font-medium text-[80px] lg:text-[160px] leading-[1em] tracking-[-0.05em] text-center px-4">
           Let's <span className="text-primary">Work</span> together and create

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="bg-gradient-to-b from-[rgba(199,70,231,1)] via-[rgba(10,6,218,0.1)] via-80% to-black">
+    <section id="about-section" className="bg-gradient-to-b from-[rgba(199,70,231,1)] via-[rgba(10,6,218,0.1)] via-80% to-black">
       <div className="max-w-[1440px] mx-auto px-4 pb-[32px] md:pb-[200px] flex flex-col md:flex-row items-center">
         <div className="md:basis-[30%]">
           <h4 className="font-epilogue font-medium md:text-[90px] text-[120px] flex items-center">

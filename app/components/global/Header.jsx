@@ -38,11 +38,12 @@ export default function Header() {
   return (
     <header className="z-[10] sticky top-0 w-full bg-gradient-to-b from-black md:to-[rgba(5,10,17,0)] to-black">
       <div className="flex justify-between items-center max-w-[1440px] mx-auto py-6 px-4 font-opensauce text-[1em]">
-        <Image
-          className="max-w-[150px] order-1"
-          src={brandLogoHorizontalWhite}
-          alt="opus space logo in white with opus space text wordmark"
-        />
+        <Link className="max-w-[150px] order-1" href={"/"}>
+          <Image
+            src={brandLogoHorizontalWhite}
+            alt="opus space logo in white with opus space text wordmark"
+          />
+        </Link>
         {/* Check if screen is laptop size. If true, display this and centered */}
         <nav className="bg-transparent order-2 hidden lg:block">
           <ul
@@ -50,19 +51,19 @@ export default function Header() {
             onClick={() => handleMenuButton(false)}
           >
             <li className="hover:underline py-6 px-8 lg:p-0">
-              <Link href={"#"}>Service</Link>
+              <Link href={"#services-section"}>Service</Link>
             </li>
             <li className="hover:underline py-6 px-8 lg:p-0">
-              <Link href={"#"}>Team</Link>
+              <Link href={"#team-section"}>Team</Link>
             </li>
             <li className="hover:underline py-6 px-8 lg:p-0">
-              <Link href={"#"}>Projects</Link>
+              <Link href={"#projects-section"}>Projects</Link>
             </li>
           </ul>
         </nav>
         <div className="flex items-center gap-[1em] order-2 lg:order-3">
           <Link
-            href={"#"}
+            href={"#contact-section"}
             className="bg-primary py-2 md:py-4 px-8 underline md:no-underline md:rounded-full md:relative md:w-[170px] absolute w-full left-0 top-[89px] text-center md:top-0"
           >
             {breakpoint === "sm" || breakpoint === "md"
@@ -82,18 +83,18 @@ export default function Header() {
               onClick={() => handleMenuButton(false)}
             />
             <ul className="flex lg:gap-[2em] flex-col lg:flex-row w-full">
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0">
-                <Link href={"#"}>Service</Link>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer">
+              <Link href={"#services-section"}>Service</Link>
               </li>
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0">
-                <Link href={"#"}>Team</Link>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer">
+              <Link href={"#team-section"}>Team</Link>
               </li>
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0">
-                <Link href={"#"}>Projects</Link>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer">
+              <Link href={"#projects-section"}>Projects</Link>
               </li>
             </ul>
             <Link
-              href="#"
+              href="#contact-section"
               className="py-8 px-8 md:hidden text-white bg-primary w-full mt-auto"
             >
               Contact Us
