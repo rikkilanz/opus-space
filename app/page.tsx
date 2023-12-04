@@ -17,7 +17,7 @@ export default function Home() {
       <OurTeam/>
       <Projects/>
       <Contact/>
-      <Footer/>
+      <Footer/> 
     </main>
   );
 }
