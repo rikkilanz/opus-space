@@ -18,7 +18,7 @@ export default function Hero() {
           Here to help you create your visions come to life, your great opus.
         </h2>
         <Link
-          href={"#"}
+          href="#about-section"
           className="bg-primary mx-4 py-6 px-8 rounded-full w-[170px] text-center font-epilogue"
         >
           Let's Get Started

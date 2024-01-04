@@ -7,6 +7,7 @@ export const teamData = [
         title: "Front End Developer",
         imageUrl: rikkiSorianoProfile,
         alt: "A professional head shot image of Rikki Soriano",
+        href: 'https://www.linkedin.com/in/rikkisoriano/'
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const teamData = [
         title: "UX Designer",
         imageUrl: renzrickEndayaProfile,
         alt: "A professional head shot image of Renzrick Endaya",
+        href: 'https://www.linkedin.com/in/renzrick-endaya/'
     },
     {
         id: 3,
@@ -21,6 +23,7 @@ export const teamData = [
         title: "Graphic Designer",
         imageUrl: joshwelLicerioProfile,
         alt: "A professional head shot image of Joshwel Licerio",
+        href: 'https://www.linkedin.com/in/jjlicerio/'
     },
     {
         id: 4,
@@ -28,5 +31,6 @@ export const teamData = [
         title: "Front End Developer",
         imageUrl: daveKooProfile,
         alt: "A professional head shot image of Dave Koo",
+        href: 'https://www.linkedin.com/in/dave-koo/'
     },
 ]

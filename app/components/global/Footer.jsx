@@ -30,20 +30,21 @@ export default function Footer() {
             </h3>
           </div>
           <div className="lg:flex lg:flex-wrap lg:gap-5 lg:w-[300px] flex flex-col lg:flex-row gap-4">
-            <Link
+            {/* <Link
               href={"#"}
               className="lg:underline font-epilogue leading-[1em] tracking-[-0.05em]"
             >
               Instagram
-            </Link>
+            </Link> */}
             <Link
-              href={"#"}
+              href="https://www.linkedin.com/company/opus-space"
+              target="_blank"
               className="lg:underline font-epilogue leading-[1em] tracking-[-0.05em]"
             >
               LinkedIn
             </Link>
             <Link
-              href={"#"}
+              href="mailto:hello@opusspace.ca"
               className="lg:underline font-epilogue leading-[1em] tracking-[-0.05em]"
             >
               hello@opusspace.ca
