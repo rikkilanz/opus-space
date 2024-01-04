@@ -5,7 +5,7 @@ import { brandLogoSymbolWhite } from "../../assets/";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="hero-section">
       <div className="max-w-[1440px] mx-auto pt-[50px] md:py-[50px] lg:pt-0">
         <div className="relative">
           <h1 className="text-[100px] sm:text-[120px] lg:text-[190px] 2xl:text-[227px] max-w-[760px] md:max-w-[750px] lg:max-w-[1180px] 2xl:max-w-[1397px] font-epilogue font-medium leading-[1em] tracking-[-0.05em] py-6 px-4">
@@ -18,7 +18,7 @@ export default function Hero() {
           Here to help you create your visions come to life, your great opus.
         </h2>
         <Link
-          href={"#"}
+          href="#about-section"
           className="bg-primary mx-4 py-6 px-8 rounded-full w-[170px] text-center font-epilogue"
         >
           Let's Get Started
