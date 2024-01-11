@@ -6,6 +6,7 @@ import joshwelLicerioProfile from './images/team-profiles/joshwellicerio-profile
 import renzrickEndayaProfile from './images/team-profiles/renzrickendaya-profile.jpg';
 import live2kThumb from './images/project-thumbnails/live-2k-thumb.jpeg';
 import forwardThumb from './images/project-thumbnails/forward-thumb.jpg';
+import pizzaComingSoonThumb from './images/project-thumbnails/pizza-coming-soon-thumb.jpg';
 
 
 export {
@@ -16,5 +17,6 @@ export {
     joshwelLicerioProfile,
     renzrickEndayaProfile,
     live2kThumb,
-    forwardThumb
+    forwardThumb,
+    pizzaComingSoonThumb
 }
