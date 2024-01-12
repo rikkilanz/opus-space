@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {projectContent.map((project) => {
           return (
-            <div className="group relative">
+            <div className="group relative" key={project.id}>
               <Image
                 className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                 src={project.imageContent[0]}

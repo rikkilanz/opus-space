@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "@heroicons/react": "^2.0.18",
     "alpinejs": "^3.13.2",
     "framer-motion": "^10.18.0",
