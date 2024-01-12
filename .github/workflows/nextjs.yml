@@ -84,6 +84,7 @@ jobs:
 
   # Deployment job
   deploy:
+  
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -93,3 +94,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+      - name: Deploy with Email.js
+        run: |
+          npm run deploy -- \
+            --user-id ${{ secrets.EMAIL_JS_USER_ID }} \
+            --service-id ${{ secrets.EMAIL_JS_SERVICE_ID }} \
+            --template-id ${{ secrets.EMAIL_JS_TEMPLATE_ID }}
