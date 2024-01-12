@@ -4,6 +4,7 @@ import CTACarousel from "./components/sections/CTACarousel"
 import Services from "./components/sections/Services";
 import OurTeam from "./components/sections/OurTeam";
 import Projects from "./components/sections/Projects";
+import ProjectPage from "./components/sections/ProjectPage";
 import Footer from "./components/global/Footer";
 import Contact from "./components/sections/Contact";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Services/>
       <OurTeam/>
       <Projects/>
+      <ProjectPage/>
       <Contact/>
       <Footer/>
     </main>
