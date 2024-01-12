@@ -95,8 +95,12 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
       - name: Deploy with Email.js
-        run: |
-          npm run deploy -- \
-            --user-id ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} \
-            --service-id ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} \
-            --template-id ${{ secrets.NEXT_PUBLIC_API_KEY}}
+        # run: |
+        #   npm run deploy -- \
+        #     --user-id ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} \
+        #     --service-id ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} \
+        #     --template-id ${{ secrets.NEXT_PUBLIC_API_KEY}} \
+        env:
+          NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }}
+          NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }}
+          NEXT_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_API_KEY}}
