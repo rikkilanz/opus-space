@@ -90,17 +90,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    env:
-      SERVICE_KEY: ${{ secrets.SERVICE_KEY }} 
-      TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }} 
-      API_KEY: ${{ secrets.API_KEY}}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-      # - name: Deploy with Email.js
-      #   run: |
+      - name: Deploy with Email.js
+        run: |
       #     npm run deploy -- 
         #     --user-id ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} \
         #     --service-id ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} \
         #     --template-id ${{ secrets.NEXT_PUBLIC_API_KEY}} \
+        env:
+          SERVICE_KEY: ${{ secrets.SERVICE_KEY }} 
+          TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }} 
+          API_KEY: ${{ secrets.API_KEY}}
