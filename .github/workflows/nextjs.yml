@@ -91,9 +91,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     env:
-      NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} 
-      NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} 
-      NEXT_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_API_KEY}}
+      NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.SERVICE_KEY }} 
+      NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }} 
+      NEXT_PUBLIC_API_KEY: ${{ secrets.API_KEY}}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
