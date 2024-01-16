@@ -104,9 +104,9 @@ jobs:
       - name: Env deploy
         run: |
           touch .env.local
-          echo NEXT_PUBLIC_SERVICE_KEY=${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} >> .env.local
-          echo NEXT_PUBLIC_TEMPLATE_KEY=${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} >> .env.local
-          echo NEXT_PUBLIC_API_KEY=${{ secrets.NEXT_PUBLIC_API_KEY }} >> .env.local
+          echo NEXT_PUBLIC_SERVICE_KEY=${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} > .env.local
+          echo NEXT_PUBLIC_TEMPLATE_KEY=${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} > .env.local
+          echo NEXT_PUBLIC_API_KEY=${{ secrets.NEXT_PUBLIC_API_KEY }} > .env.local
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
