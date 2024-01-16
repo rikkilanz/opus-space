@@ -1,6 +1,6 @@
-import {live2kThumb, forwardThumb} from "../../assets/index";
-import Image from "next/image"; 
-import Link from "next/link";
+import { live2kThumb, forwardThumb } from "../../assets/index";
+import Image from "next/image";
+import { projectContent } from "../../constants/projectContent";
 
 export default function Projects() {
   return (
