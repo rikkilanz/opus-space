@@ -2,8 +2,6 @@ import {live2kThumb, forwardThumb} from "../../assets/index";
 import Image from "next/image"; 
 import Link from "next/link";
 
-
-
 export default function Projects() {
     return (
         <section id="projects-section">
@@ -13,10 +11,10 @@ export default function Projects() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="group relative">
+                    <Link href="/project">Project</Link>
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={forwardThumb}
-                    
                     alt="project thumbnail for forward 2023"
                     />
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">FORWARD 2023</div>
