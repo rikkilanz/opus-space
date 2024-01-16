@@ -11,12 +11,12 @@ export default function Projects() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="group relative">
-                    <Link href="/project">Project</Link>
                     <Image 
                     className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer"
                     src={forwardThumb}
                     alt="project thumbnail for forward 2023"
                     />
+                    <Link href="/project">Project</Link>
                     <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">FORWARD 2023</div>
                     <div className="absolute font-opensauceitalic text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px]">UI UX / WEB DEVELOPMENT</div>
                 </div>
