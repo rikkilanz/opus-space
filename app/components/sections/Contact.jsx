@@ -7,9 +7,6 @@ export default function Contact() {
   const SERVICE_KEY = process.env.NEXT_PUBLIC_SERVICE_KEY;
   const TEMPLATE_KEY = process.env.NEXT_PUBLIC_TEMPLATE_KEY;
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-  console.log("SERVICE_KEY:", process.env.NEXT_PUBLIC_SERVICE_KEY);
-  console.log("TEMPLATE_KEY:", process.env.NEXT_PUBLIC_TEMPLATE_KEY);
-  console.log("API_KEY:", process.env.NEXT_PUBLIC_API_KEY);
   function sendEmail(e) {
     e.preventDefault();
     let content = {
