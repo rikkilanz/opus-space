@@ -98,19 +98,19 @@ jobs:
           echo "NEXT_PUBLIC_API_KEY: $NEXT_PUBLIC_API_KEY"
           
         env:
-          NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }}
-          NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }}
-          NEXT_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_API_KEY }}
+          NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+          NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }}
+          NEXT_PUBLIC_API_KEY: ${{ secrets.API_KEY }}
       - name: Env deploy
         run: |
           touch .env.local
-          echo NEXT_PUBLIC_SERVICE_KEY=${{ secrets.NEXT_PUBLIC_SERVICE_KEY }} >> .env.local
-          echo NEXT_PUBLIC_TEMPLATE_KEY=${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }} >> .env.local
-          echo NEXT_PUBLIC_API_KEY=${{ secrets.NEXT_PUBLIC_API_KEY }} >> .env.local
+          echo NEXT_PUBLIC_SERVICE_KEY=${{ secrets.SERVICE_KEY }} >> .env.local
+          echo NEXT_PUBLIC_TEMPLATE_KEY=${{ secrets.TEMPLATE_KEY }} >> .env.local
+          echo NEXT_PUBLIC_API_KEY=${{ secrets.API_KEY }} >> .env.local
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
         # env:
-        #   NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }}
-        #   NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }}
-        #   NEXT_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_API_KEY }}
+        #   NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+        #   NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }}
+        #   NEXT_PUBLIC_API_KEY: ${{ secrets.API_KEY }}
