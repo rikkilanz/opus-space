@@ -1,4 +1,4 @@
-import {live2kThumb, forwardThumb, pizzaComingSoonThumb} from '../assets/index';
+import {live2kThumb, forwardThumb, pizzaComingSoonThumb, phillySteakThumb} from '../assets/index';
 
 export const projectContent = [
     {
@@ -15,18 +15,18 @@ export const projectContent = [
         name: "Pizza Coming Soon",
         tags: ["Graphic Design", "Branding"],
         blurb: "A revitalization of Pizza Coming Soon's menu, featuring a fresh new look and feel.",
-        description: "Pizza Coming Soon is a local pizza restaurant located in Vancouver, BC. The restaurant is known for its unique and delicious pizza flavours, as well as its welcoming and friendly atmosphere. The restaurant's menu is designed to be a one-stop shop for all things Pizza Coming Soon, featuring a fresh new look and feel.",
+        description: "This project focuses on revitalizing the menu, offering a comprehensive and fresh visual update that perfectly complements the delectable flavors of Pizza Coming Soon. Immerse yourself in a culinary journey where each design element reflects the restaurant's commitment to excellence, creating a visually appealing and inviting dining experience.",
         projectUrl: "",
         imageContent: [pizzaComingSoonThumb]
     },
     {
         id: 3,
-        name: "JJewelry Mobile eCommerce Site",
-        tags: ["UIUX"],
-        blurb: "A personal business idea, come to life.",
-        description: "JJewelry is an eCommerce site, focusing on jewelries and accessories. This business was brought to life with meticoulous branding design and an aesthetically designed prototype for its mobile website.",
-        projectUrl: "https://www.figma.com/proto/CP4idYJqsdazkTD2TLqAAK/JJewelry---Prototype?page-id=3%3A3&node-id=24%3A144&viewport=202%2C321%2C0.15&scaling=scale-down&starting-point-node-id=24%3A144&show-proto-sidebar=1",
-        imageContent: [pizzaComingSoonThumb]
+        name: "Charley's Philly Cheese Steak",
+        tags: ["Graphic Design", "Branding"],
+        blurb: "The delicious transformation of Charley's Philly Cheesesteaks menu.",
+        description: "This graphic design project is not just about a menu makeover; it's a lively blend of casual and fun elements infused into every design choice. Experience the perfect marriage of laid-back vibes and culinary excellence, making each dish a visual and flavorful delight.",
+        projectUrl: "",
+        imageContent: [phillySteakThumb]
     },
     {
         id: 4,
