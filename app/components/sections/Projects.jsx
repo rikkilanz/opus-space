@@ -1,6 +1,7 @@
 import { live2kThumb, forwardThumb } from "../../assets/index";
 import Image from "next/image";
 import { projectContent } from "../../constants/projectContent";
+import Link from 'next/link'
 
 export default function Projects() {
   return (
@@ -22,6 +23,7 @@ export default function Projects() {
                 src={project.imageContent[0]}
                 alt="project thumbnail for forward 2023"
               />
+              <Link href="/project">Hello</Link>
               <div className="absolute font-opensaucebold text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px]">
                 {project.name}
               </div>
