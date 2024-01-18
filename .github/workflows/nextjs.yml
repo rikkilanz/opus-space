@@ -73,6 +73,12 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Deploy .env.local API keys
+        run: |
+          touch .env.local
+          echo NEXT_PUBLIC_SERVICE_KEY=${{ secrets.SERVICE_KEY }} >> .env.local
+          echo NEXT_PUBLIC_TEMPLATE_KEY=${{ secrets.TEMPLATE_KEY }} >> .env.local
+          echo NEXT_PUBLIC_API_KEY=${{ secrets.API_KEY }} >> .env.local
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       # - name: Static HTML export with Next.js
@@ -101,12 +107,7 @@ jobs:
           NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
           NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.TEMPLATE_KEY }}
           NEXT_PUBLIC_API_KEY: ${{ secrets.API_KEY }}
-      - name: Env deploy
-        run: |
-          touch .env.local
-          echo NEXT_PUBLIC_SERVICE_KEY=${{ secrets.SERVICE_KEY }} >> .env.local
-          echo NEXT_PUBLIC_TEMPLATE_KEY=${{ secrets.TEMPLATE_KEY }} >> .env.local
-          echo NEXT_PUBLIC_API_KEY=${{ secrets.API_KEY }} >> .env.local
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
