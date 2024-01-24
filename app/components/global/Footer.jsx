@@ -16,7 +16,7 @@ export default function Footer() {
             Would you like to work with us? Let's work together.
           </h3>
           <Link
-            className="leading-[1em] tracking-[-0.05em] bg-primary py-4 px-6 rounded-full m-6 lg:m-0 lg:w-[150px] text-center font-epilogue block lg:mt-[20px]"
+            className="leading-[1em] tracking-[-0.05em] bg-primary py-4 px-6 rounded-full m-6 lg:m-0 lg:w-[150px] text-center font-epilogue block lg:mt-[20px] font-opensauce"
             href={"#"}
           >
             Get Started
