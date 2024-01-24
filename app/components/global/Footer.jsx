@@ -16,7 +16,7 @@ export default function Footer() {
             Would you like to work with us? Let's work together.
           </h3>
           <Link
-            className="leading-[1em] tracking-[-0.05em] bg-primary py-4 px-6 rounded-full m-6 lg:m-0 lg:w-[150px] text-center font-epilogue block lg:mt-[20px] font-opensauce"
+            className="leading-[1em] tracking-[-0.05em] bg-primary hover:bg-[#424FFF] duration-[2] transition-all ease-in-out font-epilogue hover:font-bold py-4 px-6 rounded-full m-6 lg:m-0 lg:w-[150px] text-center  block lg:mt-[20px] "
             href={"#"}
           >
             Get Started
@@ -30,22 +30,16 @@ export default function Footer() {
             </h3>
           </div>
           <div className="lg:flex lg:flex-wrap lg:gap-5 lg:w-[300px] flex flex-col lg:flex-row gap-4">
-            {/* <Link
-              href={"#"}
-              className="lg:underline font-epilogue leading-[1em] tracking-[-0.05em]"
-            >
-              Instagram
-            </Link> */}
             <Link
               href="https://www.linkedin.com/company/opus-space"
               target="_blank"
-              className="lg:underline font-epilogue leading-[1em] tracking-[-0.05em]"
+              className="lg:underline font-epilogue hover:font-bold transition-all ease-in-out duration-[2] leading-[1em] tracking-[-0.05em]"
             >
               LinkedIn
             </Link>
             <Link
               href="mailto:hello@opusspace.ca"
-              className="lg:underline font-epilogue leading-[1em] tracking-[-0.05em]"
+              className="lg:underline font-epilogue hover:font-bold transition-all ease-in-out duration-[2] leading-[1em] tracking-[-0.05em]"
             >
               hello@opusspace.ca
             </Link>

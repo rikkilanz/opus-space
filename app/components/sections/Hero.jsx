@@ -27,7 +27,7 @@ export default function Hero() {
         </h2>
         <Link
           href="#about-section"
-          className="bg-primary mx-4 py-6 px-8 rounded-full w-[170px] text-center font-epilogue"
+          className="bg-primary mx-4 py-6 px-8 rounded-full w-[170px] text-center font-epilogue hover:font-bold hover:bg-[#424FFF] duration-[2] transition-all ease-in-out"
         >
           Let's Get Started
         </Link>
