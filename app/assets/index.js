@@ -1,4 +1,4 @@
-import logoBlack from "./images/brand-logo/opus-space-black.gltf";
+import logoBlack from "./images/brand-logo/opus-space-black.glb";
 import brandLogoSymbolWhite from "./images/brand-logo/opus-space-symbol-white.svg";
 import brandLogoHorizontalWhite from "./images/brand-logo/opus-space-white-horizontal-logo.svg";
 import rikkiSorianoProfile from "./images/team-profiles/rikkisoriano-profile.jpg";

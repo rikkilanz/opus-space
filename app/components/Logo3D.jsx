@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+// import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 import * as THREE from "three";
-import { logo3DBlack } from "../assets/";
+import { logoBlack } from "../assets/";
 
 export default function Logo3D() {
   const scene = new THREE.Scene();
@@ -14,7 +15,7 @@ export default function Logo3D() {
     const loader = new GLTFLoader();
 
     loader.load(
-      logo3DBlack,
+      logoBlack,
       function (gltf) {
         scene.add(gltf.scene);
       },

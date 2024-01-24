@@ -3,28 +3,26 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   webpack: (config) => {
+    // Add a new rule for GLTF files using file-loader
     config.module.rules.push(
       {
-        test: /\.(gltf)$/,
-        loader: "gltf-loader",
-        /**
-         * @type {import("gltf-loader").GLTFLoaderOptions}
-         */
-        options: {
-          uriResolver: (module) => {
-            let result = module.default ?? module;
-            // Use the "src" property returned by the `next-image-loader` if present:
-            if (typeof result === "object" && "src" in result)
-              result = result.src;
-            return result;
+        test: /\.(glb|gltf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'static/media/', // adjust the output path as needed
+            },
           },
-        },
+        ],
       },
       {
         test: /\.(bin)$/,
-        type: "asset/resource",
+        type: 'asset/resource',
       }
     );
+
     return config;
   },
 };
