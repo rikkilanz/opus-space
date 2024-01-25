@@ -24,24 +24,6 @@ export default function Contact() {
         console.log("FAILED...", err);
       }
     );
-    // try {
-    //   // await delay(5000);
-    //   await fetch(
-    //     "https://funcapp-cavallo-technologies.azurewebsites.net/api/emailtrigger?",
-    //     {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(content),
-    //     }
-    //   );
-    //   successState(true);
-    // } catch (error) {
-    //   if (error) {
-    //     successState(false);
-    //   }
-    // }
   }
 
   return (
@@ -58,7 +40,7 @@ export default function Contact() {
             <div>
               <label
                 className="mb-2 font-opensaucebold text-white block"
-                htmlFor="for_name"
+                htmlFor="from_name"
               >
                 Your Name <span className="text-red-500">*</span>
               </label>
@@ -70,8 +52,6 @@ export default function Contact() {
               placeholder="Your Name Here"
               className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
               required
-              // value={name}
-              // onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="mb-5">
@@ -90,8 +70,6 @@ export default function Contact() {
               placeholder="Your Email Here"
               className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
               required
-              // value={email}
-              // onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="mb-5">
@@ -110,8 +88,6 @@ export default function Contact() {
               placeholder="Tell us about the project your working on!"
               className="w-full md:w-[330px] lg:w-[400px] h-[200px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
               required
-              // value={message}
-              // onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           <div className="mb-5">
@@ -129,14 +105,12 @@ export default function Contact() {
               id="budget"
               placeholder="Give us a general sense of your budget"
               className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
-              // value={budget}
-              // onChange={(e) => setBudget(e.target.value)}
             />
           </div>
           <div>
             <button
               type="submit"
-              className="bg-primary md:w-[150px] p-[15px] rounded-full text-[15px] text-center w-full"
+              className="bg-primary py-4 px-6 rounded-full text-[15px] text-center w-full hover:bg-[#424FFF] duration-[2] transition-all ease-in-out font-epilogue hover:font-bold"
             >
               Send Message
             </button>

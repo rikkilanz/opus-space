@@ -50,13 +50,13 @@ export default function Header() {
             className="flex lg:gap-[2em] flex-col lg:flex-row w-full"
             onClick={() => handleMenuButton(false)}
           >
-            <li className="hover:underline py-6 px-8 lg:p-0">
+            <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
               <Link href={"#services-section"}>Service</Link>
             </li>
-            <li className="hover:underline py-6 px-8 lg:p-0">
+            <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
               <Link href={"#team-section"}>Team</Link>
             </li>
-            <li className="hover:underline py-6 px-8 lg:p-0">
+            <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
               <Link href={"#projects-section"}>Projects</Link>
             </li>
           </ul>
@@ -64,7 +64,7 @@ export default function Header() {
         <div className="flex items-center gap-[1em] order-2 lg:order-3">
           <Link
             href={"#contact-section"}
-            className="bg-primary py-2 md:py-4 px-8 underline md:no-underline md:rounded-full md:relative md:w-[170px] absolute w-full left-0 top-[89px] text-center md:top-0"
+            className="bg-primary py-2 md:py-4 px-8 underline md:no-underline md:rounded-full md:relative md:w-[170px] absolute w-full left-0 top-[89px] text-center md:top-0 hover:bg-[#424FFF] duration-[2] transition-all ease-in-out font-epilogue hover:font-bold"
           >
             {breakpoint === "sm" || breakpoint === "md"
               ? "Contact us and get started now!"
@@ -83,14 +83,14 @@ export default function Header() {
               onClick={() => handleMenuButton(false)}
             />
             <ul className="flex lg:gap-[2em] flex-col lg:flex-row w-full">
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer">
-              <Link href={"#services-section"}>Service</Link>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+                <Link href={"#services-section"}>Service</Link>
               </li>
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer">
-              <Link href={"#team-section"}>Team</Link>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+                <Link href={"#team-section"}>Team</Link>
               </li>
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer">
-              <Link href={"#projects-section"}>Projects</Link>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+                <Link href={"#projects-section"}>Projects</Link>
               </li>
             </ul>
             <Link
