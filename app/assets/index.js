@@ -9,6 +9,10 @@ import live2kThumb from "./images/project-thumbnails/live-2k-thumb.jpeg";
 import forwardThumb from "./images/project-thumbnails/forward-thumb.jpg";
 import pizzaComingSoonThumb from "./images/project-thumbnails/pizza-coming-soon-thumb.jpg";
 import phillySteakThumb from "./images/project-thumbnails/phillysteak-thumb.jpg";
+import forwardCollection from "./images/project-thumbnails/forward-collection.jpg";
+import live2kCollection from "./images/project-thumbnails/live-2k-collection.jpg";
+import phillyCheeseSteakCollection from "./images/project-thumbnails/philly-cheesesteak-collection.jpg";
+// import pizzaCommingSoonCollection from "./images/project-thumbnails/pizza-coming-soon-collection.jpg";
 
 export {
   brandLogoSymbolWhite,
@@ -21,5 +25,8 @@ export {
   forwardThumb,
   pizzaComingSoonThumb,
   phillySteakThumb,
-  logoBlack
+  logoBlack,
+  forwardCollection,
+  live2kCollection,
+  phillyCheeseSteakCollection
 };
