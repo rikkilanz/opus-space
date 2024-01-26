@@ -12,7 +12,6 @@ export default function ProjectPage({ searchParams }) {
         if (searchParams.slug === project.slug) {
           return (
             <section>
-              {console.log(searchParams)}
               <div>
                 <Image
                   className="w-full h-auto object-cover"

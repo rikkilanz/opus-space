@@ -50,7 +50,7 @@ export default function Contact() {
               name="name"
               id="from_name"
               placeholder="Your Name Here"
-              className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
+              className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md focus:border-2 rounded-sm"
               required
             />
           </div>
@@ -68,7 +68,7 @@ export default function Contact() {
               name="email"
               id="from_email"
               placeholder="Your Email Here"
-              className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
+              className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md focus:border-2 rounded-sm"
               required
             />
           </div>
@@ -86,7 +86,7 @@ export default function Contact() {
               name="project"
               id="message"
               placeholder="Tell us about the project your working on!"
-              className="w-full md:w-[330px] lg:w-[400px] h-[200px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
+              className="w-full md:w-[330px] lg:w-[400px] h-[200px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md focus:border-2 rounded-sm"
               required
             />
           </div>
@@ -104,7 +104,7 @@ export default function Contact() {
               name="budget"
               id="budget"
               placeholder="Give us a general sense of your budget"
-              className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md"
+              className="w-full md:w-[330px] lg:w-[400px] border border-white bg-transparent p-4 text-[12px] font-opensauce text-white outline-none focus:border-primary focus:shadow-md focus:border-2 rounded-sm"
             />
           </div>
           <div>
