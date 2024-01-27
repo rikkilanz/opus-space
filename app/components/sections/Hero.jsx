@@ -13,11 +13,6 @@ export default function Hero() {
             We are Opus-Space.
           </h1>
           <div className="z-[-2] absolute top-[9rem] right-0 left-0 mx-auto opacity-[50%] blur-xl orb" />
-          {/* <Image
-            className="absolute top-0 right-0 left-0 mx-auto w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] opacity-25"
-            src={brandLogoSymbolWhite}
-            alt="Opus Space Brand Logo White"
-          /> */}
         </div>
           <div className="block absolute top-20 left-0 right-0 z-[-1] h-[500px] w-full">
             <Logo3D />

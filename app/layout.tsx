@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Epilogue } from "next/font/google";
 import "./css/globals.css";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 // Component imports
 import Header from "./components/global/Header";
+import Footer from "./components/global/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
@@ -29,6 +28,7 @@ export default function RootLayout({
       <body className="bg-black">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
