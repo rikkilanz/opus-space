@@ -6,11 +6,13 @@ import { projectContent } from "../constants/projectContent";
 import ProjectsList from "../components/ProjectsList";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
-async function fetchData(slug) {
+async function fetchData(params) {
   // Simulating an API call or any asynchronous data fetching
   return new Promise((resolve) => {
     setTimeout(() => {
-      const project = projectContent.find((proj) => proj.slug === slug);
+      const project = projectContent.find((proj) => proj.slug === params.slug);
+  console.log(project)
+
       resolve(project);
     }, 1000); // Simulating a 1-second delay
   });
@@ -22,19 +24,16 @@ export default function ProjectPage({ searchParams }) {
   useEffect(() => {
     const fetchProjectData = async () => {
       if (searchParams) {
-        const data = await fetchData(searchParams.slug);
+        const data = await fetchData(searchParams);
         setProject(data);
       }
     };
 
     fetchProjectData();
   }, [searchParams]);
-
-  if (!project) {
-    // You can render a loading state or return null
-    return null;
-  }
-  return (
+  return !project ? (
+    <div>Loading ....</div>
+  ) : (
     <div>
       {projectContent.map((project) => {
         if (searchParams.slug === project.slug) {
