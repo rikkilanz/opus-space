@@ -8,10 +8,12 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
 async function fetchData(params) {
   // Simulating an API call or any asynchronous data fetching
+  console.log(params)
+
   return new Promise((resolve) => {
     setTimeout(() => {
       const project = projectContent.find((proj) => proj.slug === params.slug);
-  console.log(project)
+      console.log(project)
 
       resolve(project);
     }, 1000); // Simulating a 1-second delay
