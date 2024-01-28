@@ -1,11 +1,39 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { projectContent } from "../constants/projectContent";
 import ProjectsList from "../components/ProjectsList";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
+async function fetchData(slug) {
+  // Simulating an API call or any asynchronous data fetching
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const project = projectContent.find((proj) => proj.slug === slug);
+      resolve(project);
+    }, 1000); // Simulating a 1-second delay
+  });
+}
+
 export default function ProjectPage({ searchParams }) {
+  const [project, setProject] = useState(null);
+
+  useEffect(() => {
+    const fetchProjectData = async () => {
+      if (searchParams) {
+        const data = await fetchData(searchParams.slug);
+        setProject(data);
+      }
+    };
+
+    fetchProjectData();
+  }, [searchParams]);
+
+  if (!project) {
+    // You can render a loading state or return null
+    return null;
+  }
   return (
     <div>
       {projectContent.map((project) => {
@@ -15,7 +43,7 @@ export default function ProjectPage({ searchParams }) {
               <div>
                 <Image
                   className="w-full h-auto object-cover"
-                  src={project.imageContent[0]}
+                  src={project.imageContent[0].src}
                   alt="Forward thumbnail"
                 />
               </div>
@@ -73,7 +101,8 @@ export default function ProjectPage({ searchParams }) {
                 <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-[rgba(5,10,17,0) lg:h-[200px] h-[80px]" />
 
                 <Image
-                  src={project.imageContent[1]}
+                  src={project.imageContent[1].src}
+                  alt={project.imageContent[1].alt}
                   className="w-full h-auto object-cover"
                 />
               </div>

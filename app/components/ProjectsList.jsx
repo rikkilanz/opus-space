@@ -16,8 +16,8 @@ export default function ProjectsList() {
             <div className="group relative overflow-hidden">
               <Image
                 className="w-full group-hover:bg-slate-900 group-hover:opacity-50 cursor-pointer transition-all ease-in-out duration-[2] group-hover:transform group-hover:scale-[1.03]"
-                src={project.imageContent[0]}
-                alt="project thumbnail for forward 2023"
+                src={project.imageContent[0].src}
+                alt={project.imageContent[0].alt}
               />
               <div className="absolute font-opensaucebold leading-[1em] tracking-[-0.05em] text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px] 2xl:text-[60px] uppercase transition-all ease-in-out duration-[2]">
                 {project.name}
