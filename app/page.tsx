@@ -5,6 +5,7 @@ import Services from "./components/sections/Services";
 import OurTeam from "./components/sections/OurTeam";
 import Projects from "./components/sections/Projects";
 import Footer from "./components/global/Footer";
+import Error from "./components/sections/404page.jsx";
 import Contact from "./components/sections/Contact";
 
 export default function Home() {
