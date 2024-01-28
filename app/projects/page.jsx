@@ -8,13 +8,9 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
 async function fetchData(params) {
   // Simulating an API call or any asynchronous data fetching
-  console.log(params)
-
   return new Promise((resolve) => {
     setTimeout(() => {
       const project = projectContent.find((proj) => proj.slug === params.slug);
-      console.log(project)
-
       resolve(project);
     }, 1000); // Simulating a 1-second delay
   });
@@ -22,6 +18,8 @@ async function fetchData(params) {
 
 export default function ProjectPage({ searchParams }) {
   const [project, setProject] = useState(null);
+  console.log(searchParams);
+  console.log(project);
 
   useEffect(() => {
     const fetchProjectData = async () => {
@@ -30,7 +28,8 @@ export default function ProjectPage({ searchParams }) {
         setProject(data);
       }
     };
-
+    console.log(searchParams);
+    console.log(project);
     fetchProjectData();
   }, [searchParams]);
   return !project ? (
@@ -40,7 +39,7 @@ export default function ProjectPage({ searchParams }) {
       {projectContent.map((project) => {
         if (searchParams.slug === project.slug) {
           return (
-            <section>
+            <section key={project.id}>
               <div>
                 <Image
                   className="w-full h-auto object-cover"
