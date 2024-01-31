@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   images: { unoptimized: true },
   webpack: (config) => {
     // Add a new rule for GLTF files using file-loader
@@ -9,22 +8,23 @@ const nextConfig = {
         test: /\.(glb|gltf)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'static/media/', // adjust the output path as needed
+              name: "[name].[ext]",
+              outputPath: "static/media/", // adjust the output path as needed
             },
           },
         ],
       },
       {
         test: /\.(bin)$/,
-        type: 'asset/resource',
+        type: "asset/resource",
       }
     );
 
     return config;
   },
+  output: "export",
 };
 
 module.exports = nextConfig;

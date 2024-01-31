@@ -1,43 +1,29 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import { projectContent } from "../../constants/projectContent";
+import ProjectsList from "../../components/ProjectsList";
 import Image from "next/image";
-import { projectContent } from "../constants/projectContent";
-import ProjectsList from "../components/ProjectsList";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
-async function fetchSearchParamsFunction() {
-  // Implement your logic to fetch searchParams
-  // For example, you can use the router.query object
-  const { slug } = useRouter().query;
-  return { slug };
+export async function generateStaticParams() {
+  try {
+    // Your logic for fetching and processing data
+    const posts = projectContent;
+
+    return posts.map((post) => ({
+      projects: post.slug,
+    }));
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return []; // Return an empty array or handle the error in an appropriate way
+  }
 }
 
-export default function ProjectPage() {
-  const router = useRouter();
-  const [searchParams, setSearchParams] = useState(null);
-  console.log(router)
-
-  useEffect(() => {
-    // Fetch and set searchParams here
-    const fetchSearchParams = async () => {
-      // Assuming you are using some asynchronous function to fetch searchParams
-      // You can replace the following line with your actual fetching logic
-      const fetchedSearchParams = await fetchSearchParamsFunction();
-
-      setSearchParams(fetchedSearchParams);
-    };
-
-    fetchSearchParams();
-  }, [router.query.slug]);
-
-  return !project ? (
-    <div>Loading ....</div>
-  ) : (
+export default function ProjectDetails({ params }) {
+  const { projects } = params;
+  return (
     <div>
       {projectContent.map((project) => {
-        if (searchParams.slug === project.slug) {
+        if (projects === project.slug) {
           return (
             <section key={project.id}>
               <div>

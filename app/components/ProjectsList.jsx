@@ -8,10 +8,8 @@ export default function ProjectsList() {
         return (
           <Link
             key={project.id}
-            href={{
-              pathname: "/projects/",
-              query: { slug: project.slug },
-            }}
+            href="/project/[projects]"
+            as={`/project/${project.slug}`}
           >
             <div className="group relative overflow-hidden">
               <Image
