@@ -36,6 +36,7 @@ export const projectContent = [
     projectUrl: "",
     imageContent: [
       { src: pizzaComingSoonThumb, alt: "Pizza Coming Soon Thumbnail" },
+      { src: forwardCollection, alt: "Forward Collection" },
     ],
   },
   {
