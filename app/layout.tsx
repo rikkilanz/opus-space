@@ -24,10 +24,6 @@ export default function RootLayout({
     <html lang="en" className={epilogue.variable}>
       <head>
         <link rel="icon" href="../favicon.ico" sizes="any" />
-        <script
-          defer
-          src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-        ></script>
       </head>
       <body className="bg-black">
         <Header />

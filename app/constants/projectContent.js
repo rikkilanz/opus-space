@@ -6,6 +6,7 @@ import {
   live2kCollection,
   forwardCollection,
   phillyCheeseSteakCollection,
+  pizzaCommingSoonCollection
 } from "../assets/index";
 
 export const projectContent = [
@@ -36,7 +37,7 @@ export const projectContent = [
     projectUrl: "",
     imageContent: [
       { src: pizzaComingSoonThumb, alt: "Pizza Coming Soon Thumbnail" },
-      { src: forwardCollection, alt: "Forward Collection" },
+      { src: pizzaCommingSoonCollection, alt: "Forward Collection" },
     ],
   },
   {
