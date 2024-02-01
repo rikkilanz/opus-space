@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={epilogue.variable}>
       <head>
-        <link rel="icon" href="./favicon.ico" sizes="any" />
+        <link rel="icon" href="../favicon.ico" sizes="any" />
       </head>
       <body className="bg-black">
         <Header />

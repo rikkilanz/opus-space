@@ -17,10 +17,10 @@ export default function ProjectsList() {
                 src={project.imageContent[0].src}
                 alt={project.imageContent[0].alt}
               />
-              <div className="absolute font-opensaucebold leading-[1em] tracking-[-0.05em] text-white font-bold inset-0 ml-2 opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px] 2xl:text-[60px] uppercase transition-all ease-in-out duration-[2]">
+              <div className="absolute font-opensaucebold leading-[1em] tracking-[-0.05em] text-white font-bold inset-0 ml-2 mt-2   opacity-0 group-hover:opacity-100 md:text-[36px] lg:text-[40px] 2xl:text-[60px] uppercase transition-all ease-in-out duration-[2]">
                 {project.name}
               </div>
-              <div className="absolute font-opensauceitalic leading-[1em] tracking-[-0.05em] text-white bottom-0 right-0 mr-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px] 2xl:text-[34px] transition-all ease-in-out duration-[2]">
+              <div className="absolute font-opensauceitalic leading-[1em] tracking-[-0.05em] text-white bottom-0 right-0 mr-2  mb-2 opacity-0 group-hover:opacity-100 md:text-[22px] lg:text-[34px] 2xl:text-[34px] transition-all ease-in-out duration-[2]">
                 {project.tags.map((tag, index) => {
                   return (
                     <span key={tag}>
