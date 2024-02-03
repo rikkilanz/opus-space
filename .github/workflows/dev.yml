@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: Deploy Next.js site to Pages
+name: Deploy DEV Branch Next.js site to Github Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -111,3 +111,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        env:
+          NEXT_PUBLIC_SERVICE_KEY: ${{ secrets.NEXT_PUBLIC_SERVICE_KEY }}
+          NEXT_PUBLIC_TEMPLATE_KEY: ${{ secrets.NEXT_PUBLIC_TEMPLATE_KEY }}
+          NEXT_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_API_KEY }}

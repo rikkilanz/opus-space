@@ -1,43 +1,29 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import { projectContent } from "../../constants/projectContent";
+import ProjectsList from "../../components/ProjectsList";
 import Image from "next/image";
-import { projectContent } from "../constants/projectContent";
-import ProjectsList from "../components/ProjectsList";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
-async function fetchData(params) {
-  // Simulating an API call or any asynchronous data fetching
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const project = projectContent.find((proj) => proj.slug === params.slug);
-      resolve(project);
-    }, 1000); // Simulating a 1-second delay
-  });
+export async function generateStaticParams() {
+  try {
+    // Your logic for fetching and processing data
+    const posts = projectContent;
+
+    return posts.map((post) => ({
+      projects: post.slug,
+    }));
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return []; // Return an empty array or handle the error in an appropriate way
+  }
 }
 
-export default function ProjectPage({ searchParams }) {
-  const [project, setProject] = useState(null);
-  console.log(searchParams);
-  console.log(project);
-
-  useEffect(() => {
-    const fetchProjectData = async () => {
-      if (searchParams) {
-        const data = await fetchData(searchParams);
-        setProject(data);
-      }
-    };
-    console.log(searchParams);
-    console.log(project);
-    fetchProjectData();
-  }, [searchParams]);
-  return !project ? (
-    <div>Loading ....</div>
-  ) : (
+export default function ProjectDetails({ params }) {
+  const { projects } = params;
+  return (
     <div>
       {projectContent.map((project) => {
-        if (searchParams.slug === project.slug) {
+        if (projects === project.slug) {
           return (
             <section key={project.id}>
               <div>
