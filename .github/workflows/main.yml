@@ -1,8 +1,6 @@
 name: Deploy and build MAIN to Hosting Platform
 
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 
 permissions:
