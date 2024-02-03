@@ -35,7 +35,7 @@ export default function Home() {
       <Services/>
       <NotFoundPage/>
       <OurTeam/>
-      <Projects/>
+      <Projects/>   
       <Contact/>
     </main>
   );
