@@ -1,6 +1,7 @@
+import React from "react";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
-import CTACarousel from "./components/sections/CTACarousel"
+import CTACarousel from "./components/sections/CTACarousel";
 import Services from "./components/sections/Services";
 import OurTeam from "./components/sections/OurTeam";
 import Projects from "./components/sections/Projects";
@@ -12,10 +13,10 @@ export default function Home() {
       <Hero />
       <About />
       <CTACarousel />
-      <Services/>
-      <OurTeam/>
-      <Projects/>
-      <Contact/>
+      <Services />
+      <OurTeam />
+      <Projects />
+      <Contact />
     </main>
   );
 }
