@@ -29,7 +29,6 @@ export default function Contact() {
         setSuccess(false);
       }
     );
-    setSuccess(true);
   }
 
   return (
