@@ -20,6 +20,7 @@ export async function generateStaticParams() {
 
 export default function ProjectDetails({ params }) {
   const { projects } = params;
+
   return (
     <div>
       {projectContent.map((project) => {
