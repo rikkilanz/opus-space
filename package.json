@@ -1,11 +1,11 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "opus-space-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "production node server.js",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
