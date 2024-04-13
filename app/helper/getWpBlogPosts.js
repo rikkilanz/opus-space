@@ -1,4 +1,4 @@
-export default async function getWpBlogPosts() {
+export async function getWpBlogPosts() {
     const response = await fetch(
         `${process.env.NEXT_PUBLIC_WORDPRESS_API_URL}/posts`
     );

@@ -27,14 +27,14 @@ export default function ProjectDetails({ params }) {
         if (projects === project.slug) {
           return (
             <section key={project.id}>
-              <div>
+              <div className="max-w-[1440px] mx-auto">
                 <Image
                   className="w-full h-auto object-cover"
                   src={project.imageContent[0].src}
                   alt="Forward thumbnail"
                 />
               </div>
-              <div className="flex flex-col mt-[32px] lg:mt-[150px]">
+              <div className="flex flex-col mt-[32px] lg:mt-[150px] max-w-[1440px] mx-auto">
                 <h1 className="text-left lg:text-center text-[40px] md:text-[60px] lg:text-[100px] font-epilogue font-medium leading-[1em] tracking-[-0.05em] py-6 px-4">
                   {project.name}
                 </h1>

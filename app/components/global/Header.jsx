@@ -57,7 +57,10 @@ export default function Header() {
               <Link href={"/#team-section"}>Team</Link>
             </li>
             <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
-              <Link href={"/#projects-section"}>Projects</Link>
+              <Link href={"/projects"}>Projects</Link>
+            </li>
+            <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+              <Link href={"/blog"}>Blog</Link>
             </li>
           </ul>
         </nav>
@@ -105,12 +108,22 @@ export default function Header() {
               </li>
               <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
                 <Link
-                  href={"/#projects-section"}
+                  href={"/projects"}
                   onClick={() => {
                     setMenuOpen(false);
                   }}
                 >
                   Projects
+                </Link>
+              </li>
+              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+                <Link
+                  href={"/blog"}
+                  onClick={() => {
+                    setMenuOpen(false);
+                  }}
+                >
+                  Blog
                 </Link>
               </li>
             </ul>

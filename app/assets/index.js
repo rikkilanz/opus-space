@@ -1,6 +1,7 @@
 import logoBlack from "./images/brand-logo/opus-space-black.gltf";
 import brandLogoSymbolWhite from "./images/brand-logo/opus-space-symbol-white.svg";
 import brandLogoHorizontalWhite from "./images/brand-logo/opus-space-white-horizontal-logo.svg";
+import brandWordmarkWhite from "./images/brand-logo/opus-space-white-wordmark.svg";
 import rikkiSorianoProfile from "./images/team-profiles/rikkisoriano-profile.jpg";
 import daveKooProfile from "./images/team-profiles/davekoo-profile.jpg";
 import joshwelLicerioProfile from "./images/team-profiles/joshwellicerio-profile.jpg";
@@ -17,6 +18,7 @@ import pizzaCommingSoonCollection from "./images/project-thumbnails/pizza-coming
 export {
   brandLogoSymbolWhite,
   brandLogoHorizontalWhite,
+  brandWordmarkWhite,
   rikkiSorianoProfile,
   daveKooProfile,
   joshwelLicerioProfile,

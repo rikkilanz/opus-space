@@ -3,13 +3,13 @@ import { projectContent } from "../constants/projectContent";
 import Link from "next/link";
 export default function ProjectsList() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2 pt-[50px] lg:pt-0">
       {projectContent.map((project) => {
         return (
           <Link
             key={project.id}
-            href="/project/[projects]"
-            as={`/project/${project.slug}`}
+            href="/projects/[projects]"
+            as={`/projects/${project.slug}`}
           >
             <div className="group relative overflow-hidden">
               <Image
