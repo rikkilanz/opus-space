@@ -27,7 +27,7 @@ export default function ProjectDetails({ params }) {
         if (projects === project.slug) {
           return (
             <section key={project.id}>
-              <div className="max-w-[1440px] mx-auto">
+              <div className="max-w-[1440px] mx-auto rounded-lg">
                 <Image
                   className="w-full h-auto object-cover"
                   src={project.imageContent[0].src}

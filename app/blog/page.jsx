@@ -24,7 +24,7 @@ export default async function Blog() {
           </div>
         </div>
       ) : (
-        <ul className="grid grid-cols-1 md:grid-cols-4 gap-4 py-16 grid-flow-row">
+        <ul className="grid grid-cols-1 px-4 md:grid-cols-3 lg:grid-cols-4 gap-4 py-16 grid-flow-row">
           {posts.map(async (post) => {
             const media = await fetchMediaForPost(post);
             return (
@@ -32,26 +32,35 @@ export default async function Blog() {
                 href="/blog/[postId]"
                 as={`/blog/${post.id}`}
                 key={post.id}
-                className="min-h-[400px] group col-span-1"
+                className="group col-span-1 flex flex-col"
               >
-                <div className="relative h-full w-full overflow-hidden">
+                <div className="relative flex-shrink-0 h-60 overflow-hidden min-h-[400px]">
                   <Image
                     src={media.source_url}
                     alt={media.alt_text}
-                    fill
+                    layout="fill"
                     objectFit="cover"
-                    className="group-hover:scale-105 transition-all ease-in-out duration-[2] w-full h-full object-cover"
+                    className="group-hover:scale-105 transition-all ease-in-out duration-[2]"
                   />
                 </div>{" "}
-                <h3 className="font-epilogue text-[2.25em] leading-[1em] tracking-[-0.05em] py-4 group-hover:font-semibold transition-all ease-in-out duration-[2] line-clamp-2">
-                  {post.title.rendered}
-                </h3>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: post.excerpt.rendered,
-                  }}
-                  className="mt-2 font-opensauce leading-[1em] tracking-[-0.05em] group-hover:underline transition-all ease-in-out duration-[2] line-clamp-2"
-                />
+                <div className="flex-grow flex flex-col justify-between p-4">
+                  <h3 className="font-epilogue text-[2.25em] leading-[1em] tracking-[-0.05em] group-hover:font-semibold transition-all ease-in-out duration-[2] line-clamp-2">
+                    {post.title.rendered}
+                  </h3>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.excerpt.rendered,
+                    }}
+                    className="mt-2 font-opensauce leading-[1em] tracking-[-0.05em] group-hover:underline transition-all ease-in-out duration-[2] line-clamp-3"
+                  />
+                  <p className="text-gray-600 font-opensauce leading-[1em] tracking-[-0.05em] mt-4 uppercase">
+                    {new Date(post.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </p>
+                </div>
               </Link>
             );
           })}
