@@ -41,7 +41,8 @@ export default async function BlogDetails({ params }) {
               __html: post.excerpt.rendered,
             }}
           />
-          <p className="text-gray-600 font-opensauce leading-[1em] tracking-[-0.05em] mt-4 uppercase lg:text-center px-4">Posted on {""}
+          <p className="text-gray-600 font-opensauce leading-[1em] tracking-[-0.05em] mt-4 uppercase lg:text-center">
+            Posted on {""}
             {new Date(post.date).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
@@ -49,12 +50,12 @@ export default async function BlogDetails({ params }) {
             })}
           </p>
         </div>
-        <div className="flex flex-col max-w-[1440px] mx-auto">
-          <div className="flex flex-col lg:flex-row px-4 lg:mt-[120px] lg:items-center">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="lg:flex-row px-4 lg:mt-[120px] lg:items-center">
             <p
               className="font-opensauce leading-[1em] tracking-[-0.05em] lg:pr-[80px] xl:pr-[136px] mt-[32px] lg:mt-0"
               dangerouslySetInnerHTML={{
-                __html: post.excerpt.rendered,
+                __html: post.content.rendered,
               }}
             />
           </div>
