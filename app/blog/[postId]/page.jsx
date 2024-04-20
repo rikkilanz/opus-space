@@ -2,6 +2,7 @@ import { getWpBlogPosts } from "../../helper/getWpBlogPosts";
 import { getSinglePost } from "../../helper/getSinglePost";
 import { getFeaturedMedia } from "@/app/helper/getFeaturedMedia";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const posts = await getWpBlogPosts();
@@ -55,14 +56,33 @@ export default async function BlogDetails({ params }) {
             </div>
           </div>
         </div>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="lg:flex-row px-4 lg:mt-[120px] lg:items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-5 relative lg:mt-[120px]">
+          <div className="col-span-5 md:col-span-2">
+            <div className="sticky top-[200px]">
+              <h2 className=" bottom-0 leading-[1em] tracking-[-0.05em] font-epilogue font-semibold lg:font-semibold lg:text-[50px] text-[40px] px-4 mt-[32px] lg:mt-0">
+                Written By
+              </h2>
+              <div className="bottom-0 p-8 flex items-center">
+                <div className="border-[3px] border-white">
+                  {" "}
+                  <Image src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" width={50} height={50}></Image>
+                </div>
+                <p className="font-opensauce leading-[1.5em] tracking-[-0.05em] text-[24px] text-gray-200  mt-[32px] lg:mt-0 ml-4">
+                  Dave Koo
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="lg:flex-row px-4 lg:items-center col-span-5 md:col-span-3">
             <p
-              className="font-opensauce leading-[1em] tracking-[-0.05em] lg:pr-[80px] xl:pr-[136px] mt-[32px] lg:mt-0"
+              className="font-opensauce leading-[1.5em] tracking-[-0.05em] text-[18px] text-gray-200  mt-[32px] lg:mt-0 wp-content"
               dangerouslySetInnerHTML={{
                 __html: post.content.rendered,
               }}
             />
+            {/* <p className="font-opensauce leading-[1.5em] tracking-[-0.05em] font-[18px] text-gray-200  mt-[32px] lg:mt-0">
+              {post.content.rendered}
+            </p> */}
           </div>
         </div>
       </section>

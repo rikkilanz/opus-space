@@ -188,3 +188,53 @@ body {
   border-radius: 50%;
   z-index: 1000;
 }
+
+// WordPress Styles
+h2.wp-block-heading {
+  font-family: "OpenSauceSans-Bold";
+  font-size: 2.5rem; /* Original size for h2 */
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  color: rgb(229 231 235);
+}
+
+/* WordPress Styles for h3 */
+h3.wp-block-heading {
+  font-family: "OpenSauceSans-Bold";
+  font-size: 2rem; /* Reduced size for h3 */
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  color: rgb(229 231 235);
+}
+
+/* WordPress Styles for h4 */
+h4.wp-block-heading {
+  font-family: "OpenSauceSans-Bold";
+  font-size: 2rem; /* Reduced size for h4 */
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  color: rgb(229 231 235);
+}
+
+figure.wp-block-image {
+  margin-top: 2.5rem;
+}
+
+figcaption.wp-element-caption {
+  color: #666;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 8px 0;
+}
+
+figcaption.wp-element-caption::before,
+figcaption.wp-element-caption::after {
+  content: "(";
+  color: #666;
+}
+
+figcaption.wp-element-caption::after {
+  content: ")";
+}
