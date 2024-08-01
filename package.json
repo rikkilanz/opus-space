@@ -14,7 +14,7 @@
     "alpinejs": "^3.13.2",
     "framer-motion": "^10.18.0",
     "gltf-loader": "^1.0.0",
-    "next": "14.0.1",
+    "next": "^14.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-slick": "^0.29.0",
