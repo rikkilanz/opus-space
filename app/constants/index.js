@@ -25,12 +25,12 @@ export const teamData = [
         alt: "A professional head shot image of Joshwel Licerio",
         href: 'https://www.linkedin.com/in/jjlicerio/'
     },
-    {
-        id: 4,
-        name: "Dave Koo",
-        title: "Front End Developer",
-        imageUrl: daveKooProfile,
-        alt: "A professional head shot image of Dave Koo",
-        href: 'https://www.linkedin.com/in/dave-koo/'
-    },
+    // {
+    //     id: 4,
+    //     name: "Dave Koo",
+    //     title: "Front End Developer",
+    //     imageUrl: daveKooProfile,
+    //     alt: "A professional head shot image of Dave Koo",
+    //     href: 'https://www.linkedin.com/in/dave-koo/'
+    // },
 ]

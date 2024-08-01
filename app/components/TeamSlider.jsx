@@ -39,7 +39,7 @@ export default function TeamSlider() {
   );
 
   const settings = {
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     infinte: true,
@@ -64,7 +64,7 @@ export default function TeamSlider() {
   return (
     <Slider
       {...settings}
-      className="sm:translate-x-[-300px] md:translate-x-[-200px]"
+      className="sm:translate-x-[-300px] md:translate-x-[-400px] lg:translate-x-[-500px]"
     >
       {teamData.map((data) => (
         <TeamCard key={data.id} profileData={data} />
