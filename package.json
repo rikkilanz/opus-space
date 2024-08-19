@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@heroicons/react": "^2.0.18",
+    "@next/third-parties": "^14.2.5",
     "alpinejs": "^3.13.2",
     "framer-motion": "^10.18.0",
     "gltf-loader": "^1.0.0",
