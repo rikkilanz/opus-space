@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Epilogue } from "next/font/google";
 import "./css/globals.css";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 // Component imports
 import Header from "./components/global/Header";
 import Footer from "./components/global/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+// const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_SERVICE_KEY as string} />
     </html>
   );
 }
