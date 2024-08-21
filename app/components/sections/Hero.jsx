@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="max-w-[1440px] mx-auto pt-[50px] md:py-[50px] lg:pt-0">
         <div className="relative">
           <h1 className="text-[100px] sm:text-[120px] lg:text-[190px] 2xl:text-[227px] max-w-[760px] md:max-w-[750px] lg:max-w-[1180px] 2xl:max-w-[1397px] font-epilogue font-medium leading-[1em] tracking-[-0.05em] py-6 px-4">
-            We are Opus Space.
+            We are Opus-Space.
           </h1>
           <div className="z-[-2] absolute top-[9rem] right-0 left-0 mx-auto opacity-[50%] blur-xl orb" />
         </div>
