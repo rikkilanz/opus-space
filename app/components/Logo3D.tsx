@@ -7,7 +7,10 @@ import { logoBlack } from "../assets";
 
 export default function Logo3D() {
   const initializedRef = useRef(false);
-  let scene, camera, renderer, object;
+  let object: THREE.Object3D;
+  let scene: THREE.Scene = new THREE.Scene();
+  let camera = new THREE.PerspectiveCamera(45, 1, 1, 100000);
+  let renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
   useEffect(() => {
     const init = () => {
@@ -28,7 +31,7 @@ export default function Logo3D() {
       updateRendererSize();
 
       // Append renderer to the container
-      container.appendChild(renderer.domElement);
+      container?.appendChild(renderer.domElement);
 
       // Load the 3D object
       const loader = new GLTFLoader();
@@ -39,11 +42,11 @@ export default function Logo3D() {
           object.scale.set(200, 200, 200);
           object.position.set(0, 0, 0);
 
-          object.material = new THREE.MeshStandardMaterial({
-            color: new THREE.Color(0xffffff),
-            metalness: 2,
-            roughness: 0,
-          });
+          // object.material = new THREE.MeshStandardMaterial({
+          //   color: new THREE.Color(0xffffff),
+          //   metalness: 2,
+          //   roughness: 0,
+          // });
 
           scene.add(object);
         },
@@ -89,17 +92,19 @@ export default function Logo3D() {
       updateRendererSize();
     };
 
+    const container = document.getElementById("three-container");
     const updateRendererSize = () => {
-      const container = document.getElementById("three-container");
-      const width = container.clientWidth;
-      const height = container.clientHeight;
+      if (container instanceof HTMLElement) {
+        const width = container.clientWidth;
+        const height = container.clientHeight;
 
-      // Set renderer size based on the dimensions of the parent div
-      renderer.setSize(width, height);
+        // Set renderer size based on the dimensions of the parent div
+        renderer.setSize(width, height);
 
-      // Update camera aspect ratio
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
+        // Update camera aspect ratio
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+      }
     };
 
     if (!initializedRef.current) {
