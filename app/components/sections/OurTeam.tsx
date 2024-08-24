@@ -8,9 +8,9 @@ export default function OurTeam() {
       <h3 className="lg:text-[24px] font-epilogue font-bold text-primary text-[18px] px-4 py-6 leading-[1em] tracking-[-0.05em]">
         Our Team
       </h3>
-      <div className="overflow-hidden relative">
+      {/* <div className="overflow-hidden relative">
         <TeamSlider />
-      </div>
+      </div> */}
       {/* <ul className="flex gap-4">
         {teamData.map((team) => {
           return (
