@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo3D from "../Logo3D";
 
-import { brandLogoSymbolWhite } from "../../assets/";
+import { brandLogoSymbolWhite } from "../../assets";
 
 export default function Hero() {
   return (

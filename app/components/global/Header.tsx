@@ -7,9 +7,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [breakpoint, setBreakpointState] = useState(false);
+  const [breakpoint, setBreakpointState] = useState("");
 
-  const handleMenuButton = (e) => {
+  const handleMenuButton = (e:boolean) => {
     setMenuOpen(e);
   };
 
