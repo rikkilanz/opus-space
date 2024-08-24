@@ -1,7 +1,20 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export default function TeamCard({ profileData }) {
+interface ProfileData {
+  id: number;
+  name: string;
+  title: string;
+  imageUrl: StaticImageData;
+  alt: string;
+  href: string;
+}
+
+export default function TeamCard({
+  profileData,
+}: {
+  profileData: ProfileData;
+}) {
   return (
     <a href={profileData.href} target="_blank">
       <div className="flex flex-row flex-wrap justify-center md:justify-start items-center gap-y-[8px] lg:gap-y-2 px-4 py-6 relative lg:min-h-[500px]">

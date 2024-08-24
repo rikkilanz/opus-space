@@ -8,10 +8,10 @@ export default function OurTeam() {
       <h3 className="lg:text-[24px] font-epilogue font-bold text-primary text-[18px] px-4 py-6 leading-[1em] tracking-[-0.05em]">
         Our Team
       </h3>
-      {/* <div className="overflow-hidden relative">
+      <div className="overflow-hidden relative">
         <TeamSlider />
-      </div> */}
-      <ul className="flex gap-4">
+      </div>
+      {/* <ul className="flex gap-4">
         {teamData.map((team) => {
           return (
             <li key={team.id} className="basis-[33%]">
@@ -20,11 +20,12 @@ export default function OurTeam() {
                 width={500}
                 className="rounded-full h-full w-auto grayscale hover:grayscale-0 transition-all blur-[1px] hover:blur-0"
                 src={team.imageUrl}
+                alt={`a profile photo of ${team.name}`}
               />
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </section>
   );
 }
