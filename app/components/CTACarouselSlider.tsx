@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { brandLogoSymbolWhite } from "../assets/index";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 export default function CTACarouselSlider() {
   const [ul, setUl] = useState<Element | null>(null);
@@ -21,7 +22,7 @@ export default function CTACarouselSlider() {
           ulElement.style.display = "flex"; // Accessing the style property safely
         }
       };
-  
+
       handleCloneAndAnimate();
 
       // Set up a MutationObserver to watch for changes and re-clone if necessary
@@ -36,7 +37,7 @@ export default function CTACarouselSlider() {
         observer.disconnect(); // Cleanup the observer on component unmount
       };
     }
-  }, []); // Empty dependency array to ensure the effect runs only once
+  }, [ul]); // Empty dependency array to ensure the effect runs only once
 
   return (
     <div className="w-full inline-flex flex-nowrap whitespace-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-30px),transparent_100%)] lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] py-4 md:py-6 bg-transparent">
