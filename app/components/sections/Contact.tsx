@@ -10,8 +10,13 @@ export default function Contact() {
   const SERVICE_KEY = process.env.NEXT_PUBLIC_SERVICE_KEY;
   const TEMPLATE_KEY = process.env.NEXT_PUBLIC_TEMPLATE_KEY;
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-  function sendEmail(e) {
+
+  function sendEmail(e: any) {
     e.preventDefault();
+    if (!SERVICE_KEY || !TEMPLATE_KEY || !API_KEY) {
+      console.error("EmailJS keys are not properly defined");
+      return;
+    }
     let content = {
       from_name: e.target.name.value,
       from_email: e.target.email.value,
@@ -96,7 +101,6 @@ export default function Contact() {
                 </label>
               </div>
               <textarea
-                type="text"
                 name="project"
                 id="message"
                 placeholder="Tell us about the project your working on!"

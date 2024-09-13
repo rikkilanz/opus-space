@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 export default function TeamSlider() {
-  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props } : {currentSlide:number, slideCount:number}) => (
     <button
       id="previous"
       {...props}
@@ -22,7 +22,7 @@ export default function TeamSlider() {
       <ArrowLongLeftIcon className="hidden md:block right-[24%] bottom-[25px] w-[50px] cursor-pointer absolute lg:bottom-0 z-[99] lg:right-[30%]" />
     </button>
   );
-  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props } : {currentSlide:number, slideCount:number}) => (
     <button
       id="next"
       {...props}
@@ -57,8 +57,8 @@ export default function TeamSlider() {
         },
       },
     ],
-    nextArrow: <SlickArrowRight />,
-    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight currentSlide={0} slideCount={0} />,
+    prevArrow: <SlickArrowLeft currentSlide={0} slideCount={0} />,
   };
 
   return (

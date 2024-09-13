@@ -7,9 +7,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [breakpoint, setBreakpointState] = useState(false);
+  const [breakpoint, setBreakpointState] = useState("");
 
-  const handleMenuButton = (e) => {
+  const handleMenuButton = (e:boolean) => {
     setMenuOpen(e);
   };
 
@@ -53,9 +53,9 @@ export default function Header() {
             <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
               <Link href={"/#services-section"}>Service</Link>
             </li>
-            <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+            {/* <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
               <Link href={"/#team-section"}>Team</Link>
-            </li>
+            </li> */}
             <li className="hover:underline py-6 px-8 lg:p-0 font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
               <Link href={"/#projects-section"}>Projects</Link>
             </li>
@@ -93,7 +93,7 @@ export default function Header() {
                   Service
                 </Link>
               </li>
-              <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
+              {/* <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
                 <Link
                   href={"/#team-section"}
                   onClick={() => {
@@ -102,7 +102,7 @@ export default function Header() {
                 >
                   Team
                 </Link>
-              </li>
+              </li> */}
               <li className="hover:border-b-2 py-4 px-8 lg:p-0 cursor-pointer font-epilogue hover:font-bold transition-all duration-[2] ease-in-out">
                 <Link
                   href={"/#projects-section"}

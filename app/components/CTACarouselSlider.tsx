@@ -1,40 +1,38 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { brandLogoSymbolWhite } from "../assets/index";
 
 export default function CTACarouselSlider() {
-  const [ul, setUl] = useState(null);
-
   useEffect(() => {
     const ulElement = document.querySelector(".carousel-slider");
-    setUl(ulElement);
 
-    const handleCloneAndAnimate = () => {
-      if (ulElement) {
-        const clonedUl = ulElement.cloneNode(true);
-        clonedUl.setAttribute("aria-hidden", "true");
-        ulElement.insertAdjacentElement("afterend", clonedUl);
-        ulElement.style.display = "flex";
-      }
-    };
+    if (ulElement) {
+      const handleCloneAndAnimate = () => {
+        if (ulElement instanceof HTMLElement) {
+          const clonedUl = ulElement.cloneNode(true) as HTMLElement;
+          clonedUl.setAttribute("aria-hidden", "true");
+          ulElement.insertAdjacentElement("afterend", clonedUl);
+          ulElement.style.display = "flex"; // Accessing the style property safely
+        }
+      };
 
-    handleCloneAndAnimate();
+      handleCloneAndAnimate();
 
-    // Re-run the cloning and animation when the ul changes
-    const observer = new MutationObserver(handleCloneAndAnimate);
-    observer.observe(ulElement, {
-      attributes: true,
-      childList: true,
-      subtree: true,
-    });
+      // Set up a MutationObserver to watch for changes and re-clone if necessary
+      const observer = new MutationObserver(handleCloneAndAnimate);
+      observer.observe(ulElement, {
+        attributes: true,
+        childList: true,
+        subtree: true,
+      });
 
-    return () => {
-      // Cleanup the observer on component unmount
-      observer.disconnect();
-    };
-  }, [ul]);
+      return () => {
+        observer.disconnect(); // Cleanup the observer on component unmount
+      };
+    }
+  }, []); // Empty dependency array to ensure the effect runs only once
 
   return (
     <div className="w-full inline-flex flex-nowrap whitespace-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-30px),transparent_100%)] lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] py-4 md:py-6 bg-transparent">
