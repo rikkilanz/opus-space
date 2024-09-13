@@ -13,6 +13,7 @@ export default function Logo3D() {
   let renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
   useEffect(() => {
+    // if (typeof window === "undefined") return;
     const init = () => {
       // Create a scene
       scene = new THREE.Scene();
@@ -41,12 +42,6 @@ export default function Logo3D() {
           object = gltf.scene.children[0];
           object.scale.set(200, 200, 200);
           object.position.set(0, 0, 0);
-
-          // object.material = new THREE.MeshStandardMaterial({
-          //   color: new THREE.Color(0xffffff),
-          //   metalness: 2,
-          //   roughness: 0,
-          // });
 
           scene.add(object);
         },
