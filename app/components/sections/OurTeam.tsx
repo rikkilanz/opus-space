@@ -11,21 +11,21 @@ export default function OurTeam() {
       {/* <div className="overflow-hidden relative">
         <TeamSlider />
       </div> */}
-      {/* <ul className="flex gap-4">
+      <ul className="flex gap-4 px-4">
         {teamData.map((team) => {
           return (
             <li key={team.id} className="basis-[33%]">
               <Image
                 height={500}
                 width={500}
-                className="rounded-full h-full w-auto grayscale hover:grayscale-0 transition-all blur-[1px] hover:blur-0"
+                className="rounded-md h-full w-auto grayscale hover:grayscale-0 transition-all blur-[1px] hover:blur-0"
                 src={team.imageUrl}
                 alt={`a profile photo of ${team.name}`}
               />
             </li>
           );
         })}
-      </ul> */}
+      </ul>
     </section>
   );
 }
