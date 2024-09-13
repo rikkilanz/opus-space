@@ -1,18 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { brandLogoSymbolWhite } from "../assets/index";
 
 export default function CTACarouselSlider() {
-  const [ul, setUl] = useState<Element | null>(null);
-
   useEffect(() => {
     const ulElement = document.querySelector(".carousel-slider");
 
     if (ulElement) {
-      setUl(ulElement); // Set the ulElement state only if it's not null
-
       const handleCloneAndAnimate = () => {
         if (ulElement instanceof HTMLElement) {
           const clonedUl = ulElement.cloneNode(true) as HTMLElement;
@@ -21,7 +17,7 @@ export default function CTACarouselSlider() {
           ulElement.style.display = "flex"; // Accessing the style property safely
         }
       };
-  
+
       handleCloneAndAnimate();
 
       // Set up a MutationObserver to watch for changes and re-clone if necessary
