@@ -20,8 +20,6 @@ export default function OurTeam() {
                 className="group relative overflow-hidden"
               >
                 <Image
-                  height={0}
-                  width={0}
                   className="rounded-md h-full w-auto grayscale group-hover:grayscale-0 transition-all blur-[1px] group-hover:blur-0"
                   src={team.imageUrl}
                   alt={`a profile photo of ${team.name}`}
