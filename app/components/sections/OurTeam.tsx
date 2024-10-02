@@ -2,6 +2,8 @@ import { teamData } from "@/app/constants";
 import Image from "next/image";
 
 export default function OurTeam() {
+  console.log("debgging");
+
   return (
     <section id="team-section" className=" max-w-[1440px] mx-auto">
       <h3 className="lg:text-[24px] font-epilogue font-bold text-primary text-[18px] px-4 py-6 leading-[1em] tracking-[-0.05em]">
