@@ -14,7 +14,6 @@ export default function Home() {
       <About />
       <CTACarousel />
       <Services />
-      <OurTeam />
       <Projects />
       <Contact />
     </main>
